@@ -7,6 +7,6 @@ for i in *.jpa;
 do
    # username:password - имя пользователя и пароль к аккаунту Яндекса
    # указанные в пути каталоги /backups/sites/ должны быть предварительно созданы в Яндекс диске
-   curl -T ${i} --user ******Login******:******pass************* https://webdav.yandex.ru/
+   curl -T ${i} --user ******Login******:******pass************* https://webdav.yandex.ru/backups/sites/
    # при желании можно удалять эти бекапы с веб сервера для экономии места командой rm
 done
