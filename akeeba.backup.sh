@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -qO- "https://*******WEB********/index.php?option=com_akeeba&view=backup&key=******KEY*****" &> /dev/null
+wget -qO- "https://$1/index.php?option=com_akeeba&view=backup&key=$2" &> /dev/null
 
 today=$(date +"%Y%m%d")
 
